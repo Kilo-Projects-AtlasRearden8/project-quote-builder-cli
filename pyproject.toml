@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-quote-builder"
+version = "0.1.0"
+description = "Local-first CLI for freelancers and small businesses to build project quotes"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { file = "LICENSE" }
+keywords = ["quote", "invoice", "freelance", "cli", "markdown", "pdf"]
+
+[project.scripts]
+pqb = "project_quote_builder.cli:main"
+
+[tool.setuptools]
+packages = ["project_quote_builder"]
